@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section div {
+            position: absolute;
+            background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(12, 12, 84, 1) 33%, rgba(0, 212, 255, 1) 100%);
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+
+        }
+
+        .one {
+            z-index: 3;
+            top: 75px;
+        }
+
+        .two {
+            z-index: 2;
+            top: 150px;
+        }
+
+        .three {
+            z-index: 1;
+            top: 225px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </section>
+
+</body>
+
+</html>

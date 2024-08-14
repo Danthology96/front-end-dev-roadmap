@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+
+        /* Pseudoclases */
+        p:hover {
+
+            color: skyblue;
+        }
+
+        /* Pseudoelementos */
+        p::first-letter {
+            color: teal;
+            ;
+        }
+
+
+        p::before {
+            content: "✨";
+        }
+
+        p:hover::before {
+            content: "💅";
+        }
+
+        p::after {
+            content: "✨";
+        }
+
+        ::placeholder {
+            color: tomato;
+        }
+
+        /* Significa que los que estén dentro del div, específicamente el hijo 2 obtendrá este estilo */
+        div p:nth-child(2) {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+
+</html>

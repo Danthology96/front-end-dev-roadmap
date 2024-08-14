@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Para no estar calculando cuánto equivale 1rem se modifica todo el html */
+        html {
+            /* Con regla de 3, si 100% = 16px, cuánto porcentaje es 10px, da 62.5% */
+            /* font-size: 62.5%; */
+            /* O también, si quiero que 1rem = 1px, pues lo pongo en 6.25% */
+            font-size: 6.25%;
+        }
+
+        body {
+            font-size: 16rem;
+            margin: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        p {
+            /* Con esto, simplemente se multiplica por 10 1rem y eso es en pixeles */
+            /* font-size: 1rem; */
+            /* Como 1rem = 1px */
+            font-size: 24rem;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Platzi</div>
+    <p>Platzi master</p>
+    <div class="container"></div>
+</body>
+
+</html>

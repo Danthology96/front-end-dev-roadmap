@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Indica que a todos los p que estén dentro de div, se le otorgará esto */
+        div p {
+            color: sandybrown;
+        }
+
+        div>div {
+            background: gold;
+        }
+
+        /* A la siguiente section es el que le pondrá el color */
+        div+section {
+            background: cyan;
+        }
+
+        /* A todos los hermanos que le siguen a div, le establece */
+        section~p {
+            background: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Hola!</p>
+        <p>Es</p>
+        <p>Asombroso</p>
+    </div>
+    <div>
+        <p>A ver</p>
+        <p>Es</p>
+        <div>Anidado</div>
+    </div>
+    <section>Lo mejor!</section>
+    <section>Master!</section>
+    <p>Platzi!</p>
+    <p>Es</p>
+
+</body>
+
+</html>

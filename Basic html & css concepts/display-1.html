@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        background-color: salmon;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+
+    a {
+        background-color: skyblue;
+        /* Los elementos que son in line no tienen propiedades como width o height */
+        width: 200px;
+        height: 200px;
+        /* En este caso si se aplica el margen, pero en horizontal, no en vertical */
+        margin: 20px;
+    }
+
+    button {
+        background-color: teal;
+        /* Como es inline-block, este sí tomará todos los atributos */
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div>Bloque</div>
+    <a href="www.platzi.com">Inline</a>
+    <button>Inline-block</button>
+</body>
+
+</html>
