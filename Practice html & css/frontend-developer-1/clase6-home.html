@@ -98,18 +98,74 @@
             margin-bottom: 30px;
         }
 
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 26px;
+            place-content: center;
+
+        }
+
+        .product-card {
+            width: 240px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .product-info figure {
+            margin: 0px;
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--very-light-pink);
+        }
+
 
         @media (max-width: 640px) {
-            .form-container {
-                height: 100%;
-
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 140px);
+                place-content: center;
             }
 
-            .form {
-                height: 100%;
-                justify-content: space-between;
-
+            .product-card {
+                width: 140px;
             }
+
+            .product-card img {
+                width: 100%;
+                height: 140px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+
 
         }
     </style>
@@ -119,10 +175,125 @@
     <section class="main-container">
         <div class="cards-container">
             <div class="product-card">
-
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Phone</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
             </div>
 
-        </div>
+
+
 
     </section>
 </body>
